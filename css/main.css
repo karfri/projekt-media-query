@@ -9,7 +9,7 @@ body {
   margin: 0;
   height: 400px;
   width: 100%;
-  background-image: url(images/background.jpeg);
+  background-image: url(../images/background.jpeg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -18,7 +18,6 @@ body {
 .bg-text {
   padding: 30px;
   margin: auto;
-  color: #bab3b3;
 }
 
 
@@ -31,7 +30,6 @@ nav {
 nav ul {
   list-style: none;
   display: inline;
-  color: black;
   padding: 0;
   margin: 40px;
 }
