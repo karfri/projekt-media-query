@@ -1,0 +1,231 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #222;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  color: white;
+  overflow: hidden;
+}
+
+.title {
+  text-align: center;
+  margin: auto;
+  display: inline;
+  position: absolute;
+  top: 0;
+  border-bottom: 2px solid #fff;
+  padding: 20px 5px;
+  left: 55%;
+}
+.title p {
+  text-shadow: 3px 3px 12px #222;
+  padding: 0;
+  margin: 0;
+}
+
+
+.table-wrapper {
+  text-align: center;
+  vertical-align: bottom;
+  display: block;
+  margin: auto;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.table {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.table > div {
+  display: flex;
+  flex-basis: 50%;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.table > div > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.table > div > div > p {
+  text-shadow: 2px 2px black;
+  border-top: 2px solid #111;
+  border-left: 2px solid #111;
+  border-radius: 2px;
+  background-color: #333;
+  padding: 12px 24px 14px;
+  display: inline-block;
+}
+.box1 {
+   background-image: url(background1.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+ }
+.box2 {
+  background-image: url(background2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.box3 {
+  background-image: url(background3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.box4 {
+  background-image: url(background4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.box1:hover {
+  background-image: url(background1_bw.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.box2:hover {
+  background-image: url(background2_bw.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.box3:hover {
+  background-image: url(background3_bw.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.box4:hover {
+  background-image: url(background4_bw.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.overlay {
+  position: absolute;
+  text-align: left;
+  display: block;
+  margin: 0;
+  left: 0px;
+  right: 0px;
+  background-color: rgba(70, 70, 70, 0.7);
+  overflow: hidden;
+  width: 0;
+  height: 50%;
+  transition: 1.4s ease;
+}
+
+.overlay2 {
+  position: absolute;
+  text-align: left;
+  display: block;
+  margin: 0;
+  right: 0px;
+  background-color: rgba(70, 70, 70, 0.7);
+  overflow: hidden;
+  width: 0;
+  height: 50%;
+  transition: 1.4s ease;
+}
+
+.overlay3 {
+  position: absolute;
+  text-align: left;
+  display: block;
+  margin: 0;
+  bottom: 0px;
+  background-color: rgba(70, 70, 70, 0.7);
+  overflow: hidden;
+  width: 0;
+  height: 50%;
+  transition: 1.4s ease;
+}
+
+.overlay4 {
+  position: absolute;
+  text-align: left;
+  display: block;
+  margin: 0;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(70, 70, 70, 0.7);
+  overflow: hidden;
+  width: 0;
+  height: 50%;
+  transition: 1.4s ease;
+}
+/* Hover to activate fadein menu */
+/* Redigera här för att se fadein menyn byta storlek */
+.box1:hover + .overlay, .box2:hover + .overlay2, .box3:hover + .overlay3, .box4:hover + .overlay4, .overlay:hover, .overlay2:hover, .overlay3:hover, .overlay4:hover {
+  width: 50%;
+}
+
+/* The text on the fadein menu */
+.text {
+  /* Starting animation */
+  animation: slidein 1.5s;
+  animation-timing-function: ease-in;
+
+  font-family: serif;
+  display: block;
+  position: absolute;
+  padding: 15px;
+  max-height: 100%;
+  width: 220px;
+  margin: 120px 10px -10px;
+  color: white;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+/* Small title for fadein menu */
+.sm-title {
+  font-size: 1.6em;
+  line-height: 50px;
+}
+
+/* Stylesheet for links in fadein menu */
+.text > .btn {
+  display: block;
+  width: 50%;
+  background-color: #ddd;
+  color: #222;
+  text-align: center;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 1px 1px #222;
+}
+
+.text > .btn:hover {
+  background-color: #eee;
+  text-shadow: 1px 1px 4px #fff;
+}
+
+  /* Animationskoden */
+@keyframes colorchange {
+    0%   {background-color: rgba(136, 75, 75, 0.2);}
+    100% {background-color: inherit;}
+}
+
+@keyframes slidein {
+    from {
+      top: -90%;
+    }
+    to {
+      top: 0;
+    }
+}
