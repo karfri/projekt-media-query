@@ -1,0 +1,138 @@
+body {
+	
+	font-family: "Roboto";
+	background-color: #FFF;
+	background-attachment: fixed;
+}
+h5 {
+	letter-spacing: 0.45em;
+	font-size: 1.4em;
+	font-family: "Montserrat", sans-serif;
+}
+
+header {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	height: 25px;
+	background-color: #d5f4e6;
+	font-family: "Montserrat", sans-serif;
+	text-align: center;
+}
+
+header > a {
+	color: #000;
+	text-decoration: none;
+	padding: 5px;
+
+}
+
+header > a:hover {
+	color: #666;
+}
+
+.wrapper{
+	margin: 100px 100px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: #fefbd8;
+
+
+}
+.firstline{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+}
+.secondline{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+}
+.thirdline{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+}
+.fourthline{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+}
+
+
+.firstline > div, .thirdline > div {
+	width: 50%;
+	padding: 5px 20px;
+	text-align: center;
+	color: #000;
+	box-sizing: border-box;
+}
+
+.secondline > div {
+	width: 40%;
+	height: 90%;
+	box-sizing: border-box;
+	border: 3px dashed #618685;
+	margin: auto;
+}
+
+.secondline > div > div {
+	padding: 2em;
+	text-align: center;
+	color: #000;
+}
+
+
+
+.fourthline > div {
+	margin-top: 30px;
+	width: 100%;
+	padding: 5px 20px;
+	color: #000;
+	box-sizing: border-box;
+}
+
+
+.firstline > img {
+	width: 25%;
+	height: 100%
+	
+}
+
+.secondline > img, .thirdline > img{
+	width: 50%;	
+	height: 100%;
+}
+
+
+#beige {
+	background-color: #d5f4e6;
+}
+
+
+#arrow {
+	width: 250px;
+	position: absolute;
+	top: 68px;
+	left: -2px;
+}
+
+#facebook {
+	width: 50px;
+	position: absolute;
+	top: 140px;
+	left: 50px;
+}
+
+#instagram {
+	width: 50px;
+	position: absolute;
+	top: 200px;
+	left: 50px;
+}
