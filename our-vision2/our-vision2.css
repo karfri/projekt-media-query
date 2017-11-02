@@ -1,0 +1,105 @@
+body{
+	background-image: url("http://www.zingerbug.com/Backgrounds/background_images/burlap_seamless.jpg");
+	background-repeat: repeat;
+	background-attachment: fixed;
+	font-family: arial,verdana,tahoma,sans-serif;
+	line-height: 18px;
+	font-size: 15px;
+	color: #333333;
+}
+header {
+	width: 100%;
+	height: 200px;
+}
+
+h3, h5{
+	font-family: inherit;
+	color: #5D710D;
+	font-weight: bold;
+	text-align: left;
+}
+h3 {font-size: 22px;
+	margin-left: 15px;}
+h5 {font-size: 15px;
+	text-transform: uppercase;}
+
+p {width: 95%;
+	text-align: left;
+	}
+div > p {
+	margin-left: auto;
+	margin-right: auto;
+}
+.container {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+/*Maintext centered*/
+.container-info {
+	display: flex;
+	width: 70%;
+	height: 40%;
+	margin-left: 10%;
+}
+
+.container-info div:first-child {
+	margin: auto;
+	width: 100%;
+	background-color: white;
+	padding: 5px 50px 15px 50px;
+	text-align: center;
+	
+}
+.container-info img {
+	width: 95%;
+	height: 100%;
+}
+
+/*picture and text right side*/
+.container-side {
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	padding: 30px 15px;
+	text-align: left;
+}
+
+.container-side div  {
+	width: 70%;
+	background-color: white;
+	padding: 25px;
+	margin-bottom: 25px;
+}
+
+.container-side img {
+	width: 100%;
+	height: 100%;
+
+}
+
+
+/*facebook/instagram-icons*/
+
+#arrow {
+	width: 250px;
+	position: absolute;
+	top: 130px;
+	left: 15px;
+}
+
+#facebook {
+	width: 50px;
+	position: absolute;
+	top: 220px;
+	left: 60px;
+}
+
+#instagram {
+	width: 50px;
+	position: absolute;
+	top: 275px;
+	left: 60px;
+}
+
