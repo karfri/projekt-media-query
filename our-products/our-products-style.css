@@ -1,8 +1,6 @@
 body {
-	font-family: 'Robot', sans-serif;
-	background-image: url("AdobeStock_140511907.jpeg");
-	background-size: 100%;
-	background-repeat: no-repeat;
+	font-family: "Roboto";
+	background-color: #b4a996;
 
 }
 h3 {font-size: 20px;
@@ -19,6 +17,27 @@ main {
 	padding:8px 16px;
 }
 
+header {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	height: 30%;
+	background-color: #302c2b;
+	font-family: "Montserrat", sans-serif;
+	text-align: center;
+}
+
+header > a {
+	color: #618685;
+	text-decoration: none;
+	padding: 5px;
+
+}
+
+header > a:hover {
+	color: #666;
+}
+
 .container {
 	display: flex;
 	flex-wrap: wrap;
@@ -31,7 +50,7 @@ main {
 }
 
 .quarter {
-	width: 23%;
+	width: 24%;
 	background-color: white;
 	padding: 10px;
 	box-sizing: border-box;
@@ -40,7 +59,7 @@ main {
 
 
 .quarter:hover {
-	width: 23.4%;
+	width: 24.3%;
 }
 
 
