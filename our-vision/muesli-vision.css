@@ -1,12 +1,13 @@
 body {
 	
 	font-family: "Roboto";
-	background-color: #b4a996;
+	background-color: #f1e6b6;
 	background-attachment: fixed;
+	font-size: 100%;
 }
 h5 {
 	letter-spacing: 0.45em;
-	font-size: 1.4em;
+	font-size: 130%;
 	font-family: "Montserrat", sans-serif;
 }
 
@@ -14,14 +15,14 @@ header {
 	margin-left: auto;
 	margin-right: auto;
 	width: 50%;
-	height: 25px;
-	background-color: #d5f4e6;
+	height: 30%;
+	background-color: #302c2b;
 	font-family: "Montserrat", sans-serif;
 	text-align: center;
 }
 
 header > a {
-	color: #000;
+	color: #618685;
 	text-decoration: none;
 	padding: 5px;
 
@@ -68,7 +69,7 @@ header > a:hover {
 
 .firstline > div, .thirdline > div {
 	width: 50%;
-	padding: 5px 20px;
+	padding: 2% 2%;
 	text-align: center;
 	color: #000;
 	box-sizing: border-box;
@@ -83,20 +84,11 @@ header > a:hover {
 }
 
 .secondline > div > div {
-	padding: 2em;
+	padding: 8%;
 	text-align: center;
 	color: #000;
 }
 
-
-
-.fourthline > div {
-	margin-top: 30px;
-	width: 100%;
-	padding: 5px 20px;
-	color: #000;
-	box-sizing: border-box;
-}
 
 
 .firstline > img {
