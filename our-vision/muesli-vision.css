@@ -1,7 +1,7 @@
 body {
 	
 	font-family: "Roboto";
-	background-color: #FFF;
+	background-color: #b4a996;
 	background-attachment: fixed;
 }
 h5 {
@@ -36,7 +36,7 @@ header > a:hover {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	background-color: #fefbd8;
+	background-color: white;
 
 
 }
@@ -112,7 +112,7 @@ header > a:hover {
 
 
 #beige {
-	background-color: #d5f4e6;
+	background-color: #;
 }
 
 
