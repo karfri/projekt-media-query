@@ -1,83 +1,85 @@
 /*GENERAL*/
 body {
+	font-family: "Roboto";
 	background-image: url("burlap_seamless.jpg");
 	background-repeat: repeat;
 	background-attachment: fixed;
 
 }
-h3, h5{
+h3 {font-size: 20px;
 	font-family: "Montserrat", sans-serif;
-	font-weight: bold;
 	text-align: center;
 	padding-top: 20px;
+	margin: auto;}
+main {
+	max-width:1200px;
+	margin-top:50px;
+	max-width:980px;
+	margin-left: auto;
+	margin-right: auto;
+	padding:8px 16px;
 }
-h3 {font-size: 22px;
-	margin-left: 15px;
-	color: #000;
-	}
-h5 {font-size: 15px;
-	text-transform: uppercase;
-	color: #5D710D;}
 
-p {width: 95%;
-	text-align: left;
-	font-family: "Roboto";
-	}
+
 
 /*HEADER*/
-
-/*HEADER-Containers*/
 header {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: flex-end;
+	font-size: 18px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: -8px;
-	width: 60%;
-	background-color: #8ABBB1;
-	line-height: 30px;
-}
-#logo{
 	width: 100%;
-	height: auto;
-	text-align: center;
-}
-
-nav {
-	font-size: 18px;
+	height: 60px;
+	background-color: #8ABBB1;
 	font-family: "Montserrat", sans-serif;
-	width: 70%;
-	height: 10%;
-	padding-bottom: 10px;
-	
+}
+header > img:first-child {
+	height: 90%;
+	padding:5px;
+
+	float: left;
 }
 
-.socialmedia {
-	width: 20%;
-	height: 10%;
-}
-
-/*styling header*/
-
-nav a {
+header > a {
 	color:#000;
 	text-decoration: none;
 	padding: 30px 5px 0px 5px;
+	float: left;
 
 }
 
-nav a:hover {
-	color: #FFF;
+header > a:hover {
+	color: #334D2C;
 }
 
 div.socialmedia img {
-	height: 30px;
-
+	width: 3.5%;
+	padding: 22px 5px 0px 5px;
+	float: right;
 }
 div.socialmedia img:hover {
-	filter: invert(90%);
+	filter: invert(100%);
 }
+
+
+/*FOOTER*/
+footer {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 70%;
+	height: 40px;
+	font-family: "Montserrat", sans-serif;
+}
+footer > a {
+	color: #000;
+	text-decoration: none;
+	padding: 20px 5px 0px 5px;
+	float: left;
+}
+footer > a:hover {
+	color: #BBB18A;
+}
+
 
 /*PAGE CONTENT */
 p{
@@ -88,12 +90,11 @@ p{
 .container {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
-	width: 70%;
+	justify-content: space-between;
+	width: 90%;
 	margin: auto;
-	margin-top: 90px;
 	background-color: #95BB8A;
-	
+	padding: 10px;
 	
 }
 
