@@ -1,0 +1,15 @@
+body {
+  color: #000;
+}
+
+.bg-text {
+  color: #c63c3c;
+}
+
+.current {
+  color: red;
+}
+
+nav ul {
+  color: #000;
+}
