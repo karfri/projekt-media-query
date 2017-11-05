@@ -1,109 +1,120 @@
 /*GENERAL*/
 body {
-	font-family: "Roboto";
 	background-image: url("burlap_seamless.jpg");
 	background-repeat: repeat;
 	background-attachment: fixed;
 
 }
-h3 {font-size: 20px;
+h3, h5{
 	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
 	text-align: center;
 	padding-top: 20px;
-	margin: auto;}
-main {
-	max-width:1200px;
-	margin-top:50px;
-	max-width:980px;
-	margin-left: auto;
-	margin-right: auto;
-	padding:8px 16px;
 }
+h3 {font-size: 22px;
+	margin-left: 15px;
+	color: #000;
+	}
+h4 {
+	font-family: Handlee, sans-serif;
+	color: #000;
+	font-size: 4.5em;
+	padding: 28px 0px;
+	margin: 0;
+}
+h5 {font-size: 15px;
+	text-transform: uppercase;
+	color: #5D710D;}
 
 
-
+button {
+	background-color: #8ABBB1;
+	display:none;
+}
 /*HEADER*/
+
+/*HEADER-Containers*/
 header {
-	font-size: 18px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: flex-end;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: -8px;
 	width: 100%;
-	height: 60px;
 	background-color: #8ABBB1;
+	line-height: 30px;
+	text-align: center;
+	
+}
+#logo{
+	width: 100%;
+	height: auto;
+	padding: 15px;
+	padding-top: 20px;
+	
+}
+
+nav {
+	font-size: 18px;
 	font-family: "Montserrat", sans-serif;
-}
-header > img:first-child {
-	height: 90%;
-	padding:5px;
-
-	float: left;
+	width: 100%;
+	height: 10%;
+	padding-bottom: 10px;
+	
 }
 
-header > a {
+.socialmedia {
+	width: 100%;
+	height: 10%;
+}
+
+/*styling header*/
+
+nav a {
 	color:#000;
 	text-decoration: none;
 	padding: 30px 5px 0px 5px;
-	float: left;
 
 }
 
-header > a:hover {
-	color: #334D2C;
+nav a:hover {
+	color: #FFF;
 }
 
 div.socialmedia img {
-	width: 3.5%;
-	padding: 22px 5px 0px 5px;
-	float: right;
+	height: 30px;
+
 }
 div.socialmedia img:hover {
-	filter: invert(100%);
+	filter: invert(90%);
 }
-
-
-/*FOOTER*/
-footer {
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 70%;
-	height: 40px;
-	font-family: "Montserrat", sans-serif;
-}
-footer > a {
-	color: #000;
-	text-decoration: none;
-	padding: 20px 5px 0px 5px;
-	float: left;
-}
-footer > a:hover {
-	color: #BBB18A;
-}
-
 
 /*PAGE CONTENT */
 p{
-	width: 170px;
+	width: 95%;
+	text-align: left;
 	font-family: "Roboto";
 }
 
 .container {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
-	width: 90%;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 100%;
 	margin: auto;
+	margin-top: 90px;
 	background-color: #95BB8A;
-	padding: 10px;
-	
 }
 
 .quarter {
-	width: 24%;
+	width: 90%;
+	margin: 10px auto;
 	background-color: white;
 	padding: 10px;
 	box-sizing: border-box;
-	
 }
 
 .container div:first-child {
@@ -111,6 +122,11 @@ p{
 	margin-bottom: 10px;
 }
 
+.container img {
+	width: 50%;
+	padding-left: 25%;
+	
+}
 
 
         

@@ -14,6 +14,13 @@ h3, h5{
 }
 h3 {font-size: 22px;
 	margin-left: 15px;}
+h4 {
+	font-family: Handlee, sans-serif;
+	color: #000;
+	font-size: 4.5em;
+	padding: 40px 0px;
+	margin: 0;
+}
 h5 {font-size: 15px;
 	text-transform: uppercase;}
 
@@ -24,6 +31,10 @@ p {width: 95%;
 div > p {
 	margin-left: auto;
 	margin-right: auto;
+}
+button {
+	background-color: #8ABBB1;
+	display:none;
 }
 
 /*HEADER*/

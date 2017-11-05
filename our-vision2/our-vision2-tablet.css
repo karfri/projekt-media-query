@@ -14,16 +14,17 @@ h3, h5{
 }
 h3 {font-size: 22px;
 	margin-left: 15px;}
+h4 {
+	font-family: Handlee, sans-serif;
+	color: #000;
+	font-size: 4.5em;
+	padding: 28px 0px;
+	margin: 0;
+}
 h5 {font-size: 15px;
 	text-transform: uppercase;}
 
-h4 {
-	 font-family: Handlee, sans-serif;
-	 color: #000;
-	 font-size: 4.5em;
-	 padding: 0;
-	 margin: 0;
-}
+
 
 p {width: 95%;
 	text-align: left;
@@ -34,6 +35,10 @@ div > p {
 	margin-right: auto;
 }
 
+button {
+	background-color: #8ABBB1;
+	display:none;
+}
 /*HEADER*/
 
 /*HEADER-Containers*/
@@ -127,7 +132,7 @@ div.socialmedia img:hover {
 	width: 100%;
 	padding: 30px 15px;
 	text-align: left;
-	margin-top: 70px;
+	margin-top: 0px;
 	
 }
 
