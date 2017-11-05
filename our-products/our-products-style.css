@@ -15,14 +15,22 @@ h3 {font-size: 22px;
 	margin-left: 15px;
 	color: #000;
 	}
+h4 {
+	font-family: Handlee, sans-serif;
+	color: #000;
+	font-size: 4.5em;
+	padding: 40px 0px;
+	margin: 0;
+}
 h5 {font-size: 15px;
 	text-transform: uppercase;
 	color: #5D710D;}
 
-p {width: 95%;
-	text-align: left;
-	font-family: "Roboto";
-	}
+
+button {
+	background-color: #8ABBB1;
+	display:none;
+}
 
 /*HEADER*/
 
@@ -81,7 +89,8 @@ div.socialmedia img:hover {
 
 /*PAGE CONTENT */
 p{
-	width: 170px;
+	width: 95%;
+	text-align: left;
 	font-family: "Roboto";
 }
 
@@ -108,6 +117,10 @@ p{
 .container div:first-child {
 	width: 100%;
 	margin-bottom: 10px;
+}
+
+.container img {
+	width: 100%;
 }
 
 
