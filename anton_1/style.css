@@ -19,6 +19,10 @@ html, body {
   color: #ffffff;
   margin: 0;
 }
+.socialmedia img:hover{
+  	filter: invert(90%);
+}
+
 #facebook {
 	width: 50px;
 	position: relative;
