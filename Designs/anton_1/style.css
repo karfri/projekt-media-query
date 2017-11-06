@@ -3,7 +3,7 @@ html, body {
   padding: 0;
   height: 100%;
   background-color: #222;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat','Roboto', sans-serif;
   font-size: 2em;
   color: white;
   overflow: hidden;
@@ -182,7 +182,7 @@ html, body {
 
 /* The text on the fadein menu */
 .text {
-  font-family: serif;
+  font-family: roboto;
   display: block;
   position: absolute;
   padding: 15px;
@@ -254,7 +254,12 @@ html, body {
   }
 }
 
-@media screen and (max-height: 510px){
+@media screen and (max-height: 560px){
+  .text {
+    margin: 15px 10px -10px;
+  }
+}
+@media screen and (max-height: 460px){
   .text {
     margin: 10px 10px -10px;
   }
@@ -281,7 +286,7 @@ html, body {
 
 /* Width and Height screens */
 
-@media screen and (max-height: 650px), (max-width: 420px) {
+@media screen and (max-height: 650px) and (max-width: 420px) {
   .text {
     margin: 10px 10px -10px;
   }
