@@ -1,39 +1,34 @@
-body{
+/*GENERAL*/
+body {
 	background-image: url("burlap_seamless.jpg");
 	background-repeat: repeat;
 	background-attachment: fixed;
-	
-}
 
-h3, h5{
+}
+h1, h3, h5{
 	font-family: "Montserrat", sans-serif;
-	color: #5D710D;
 	font-weight: bold;
-	text-align: left;
+	text-align: center;
 	padding-top: 20px;
 }
+h1 {
+	color: #5D710D;
+
+}
 h3 {font-size: 22px;
-	margin-left: 15px;}
+	margin-left: 15px;
+	color: #000;
+	}
 h4 {
 	font-family: Handlee, sans-serif;
 	color: #000;
-	font-size: 4.5em;
-	padding: 28px 0px;
+	font-size: 3.5em;
 	margin: 0;
 }
 h5 {font-size: 15px;
-	text-transform: uppercase;}
+	text-transform: uppercase;
+	color: #5D710D;}
 
-
-
-p {width: 95%;
-	text-align: left;
-	font-family: "Roboto";
-	}
-div > p {
-	margin-left: auto;
-	margin-right: auto;
-}
 
 button {
 	background-color: #8ABBB1;
@@ -49,7 +44,6 @@ header {
 	justify-content: flex-end;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: -8px;
 	width: 100%;
 	background-color: #8ABBB1;
 	line-height: 30px;
@@ -102,14 +96,16 @@ div.socialmedia img:hover {
 /*PAGE CONTENT*/
 .container {
 	width: 90%;
-	margin-left: 10%;
 }
+p{font-family: "Roboto";}
 
 /*Maintext centered*/
 .container-info {
 	width: 70%;
 	height: 40%;
 	margin-top: 50px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .container-info div:first-child {
@@ -133,6 +129,7 @@ div.socialmedia img:hover {
 	padding: 30px 15px;
 	text-align: left;
 	margin-top: 0px;
+
 	
 }
 
@@ -141,6 +138,7 @@ div.socialmedia img:hover {
 	background-color: white;
 	padding: 25px;
 	margin-bottom: 25px;
+	margin-left: 18%;
 
 }
 .container-side div:first-child {
@@ -154,27 +152,73 @@ div.socialmedia img:hover {
 
 }
 
+/*FOOTER*/
 
-/*facebook/instagram-icons*/
+body > footer {
+   margin: 2% 7% 20px;
+ }
 
-#arrow {
-	width: 250px;
-	position: absolute;
-	top: 90px;
-	left: 15px;
+body > footer {
+ display: flex;
+ flex: 1 2 auto;
+ border-top: 1px solid #fff;
+ flex-flow: nowrap;
+ justify-content: space-around;
+ color: #fff;
+ background-color: rgba(165, 165, 165, 0.48);
+ break-before: always;
+ margin: 20px 15% 0;
+ padding: 10px;
 }
 
-#facebook {
-	width: 50px;
-	position: absolute;
-	top: 170px;
-	left: 60px;
+body > footer > div > ul > li:first-child {
+ font-family: "Roboto", sans-serif;
+ line-height: 24px;
+ margin-bottom: 8px;
+ font-size: 1.3em;
+ color: #000;
 }
 
-#instagram {
-	width: 50px;
-	position: absolute;
-	top: 225px;
-	left: 60px;
+body > footer > div > ul {
+ list-style: none;
+ color: #000;
+ padding: 0;
+ margin: 25px 0;
+}
+
+/* Link */
+
+/* Set position relative to parent element */
+body > footer > div > ul > li {
+ position: relative;
+ margin: 1px 0;
+}
+
+/* Position absolute on "a"-element, 100% width & height. */
+body > footer > div > ul > li > a {
+ position: absolute;
+ height: 100%;
+ width: 100%;
+}
+
+/* Double :not */
+body > footer > div:not(:nth-child(4)) > ul > li:not(:first-child):hover {
+ color: #ddd674;}
+
+body > footer > div:first-child {
+ display: flex;
+ flex-direction: column;
+ display: none;
+}
+body > footer > div > div {
+ display: flex;
+ margin-top: -10px;
+ justify-content: center;
+}
+
+body > footer > div > div > img {
+ width: 48px;
+ height: 48px;
+ padding: 3px;
 }
 

@@ -3,30 +3,36 @@ body {
 	background-image: url("burlap_seamless.jpg");
 	background-repeat: repeat;
 	background-attachment: fixed;
+	font: "Roboto" sans-serif;
 
 }
-h3, h5{
+
+
+h1, h3, h5{
 	font-family: "Montserrat", sans-serif;
 	font-weight: bold;
 	text-align: center;
 	padding-top: 20px;
+
+}
+h1 {
+	color: #1F3724;
+
 }
 h3 {font-size: 22px;
 	margin-left: 15px;
-	color: #000;
+	
 	}
 h4 {
 	font-family: Handlee, sans-serif;
 	color: #000;
-	font-size: 4.5em;
-	padding: 40px 0px;
+	font-size: 3.5em;
+	padding: 0px;
 	margin: 0;
 }
 h5 {font-size: 15px;
 	text-transform: uppercase;
 	color: #5D710D;}
-
-
 button {
 	background-color: #8ABBB1;
 	display:none;
@@ -41,14 +47,15 @@ header {
 	justify-content: flex-end;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: -8px;
 	width: 60%;
-	background-color: #8ABBB1;
-	line-height: 30px;
+	height: auto;
+	background-color: #8abbb1;
+	border-radius: 10px;
 }
 #logo{
 	width: 100%;
 	height: auto;
+	padding-bottom: 0px;
 	text-align: center;
 }
 
@@ -57,7 +64,8 @@ nav {
 	font-family: "Montserrat", sans-serif;
 	width: 70%;
 	height: 10%;
-	padding-bottom: 10px;
+	padding-top:10px;
+	text-align: center;
 	
 }
 
@@ -80,7 +88,8 @@ nav a:hover {
 }
 
 div.socialmedia img {
-	height: 30px;
+	height: 20%;
+	width: 20%;
 
 }
 div.socialmedia img:hover {
@@ -98,12 +107,10 @@ p{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	width: 70%;
+	width: 80%;
 	margin: auto;
-	margin-top: 90px;
-	background-color: #95BB8A;
-	
-	
+	margin-top: 20px;
+	background-color: #95BB8A;	
 }
 
 .quarter {
@@ -122,6 +129,80 @@ p{
 .container img {
 	width: 100%;
 }
+
+/*FOOTER*/
+
+body > footer {
+   margin: 2% 7% 20px;
+
+ }
+
+body > footer {
+ display: flex;
+ flex: 1 2 auto;
+ border-top: 1px solid #fff;
+ flex-flow: nowrap;
+ justify-content: space-around;
+ color: #fff;
+ background-color: rgba(165, 165, 165, 0.48);
+ break-before: always;
+ margin: 20px 15% 0;
+ padding: 10px;
+
+}
+
+body > footer > div > ul > li:first-child {
+ font-family: "Roboto", sans-serif;
+ line-height: 24px;
+ margin-bottom: 8px;
+ font-size: 1.3em;
+ color: #000;
+}
+
+body > footer > div > ul {
+ list-style: none;
+ color: #000;
+ padding: 0;
+ margin: 25px 0;
+}
+
+/* Link */
+
+/* Set position relative to parent element */
+body > footer > div > ul > li {
+ position: relative;
+ margin: 1px 0;
+}
+
+/* Position absolute on "a"-element, 100% width & height. */
+body > footer > div > ul > li > a {
+ position: absolute;
+ height: 100%;
+ width: 100%;
+}
+
+/* Double :not */
+body > footer > div:not(:nth-child(4)) > ul > li:not(:first-child):hover {
+ color: #ddd674;}
+
+body > footer > div:first-child {
+ display: flex;
+ flex-direction: column;
+}
+body > footer > div > div {
+ display: flex;
+ margin-top: -10px;
+
+ justify-content: center;
+}
+
+body > footer > div > div > img {
+ width: 48px;
+ height: 48px;
+ padding: 3px;
+}
+
+
 
 
 
