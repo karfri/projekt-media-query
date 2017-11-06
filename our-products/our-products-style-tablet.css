@@ -5,11 +5,15 @@ body {
 	background-attachment: fixed;
 
 }
-h3, h5{
+h1, h3, h5{
 	font-family: "Montserrat", sans-serif;
 	font-weight: bold;
 	text-align: center;
 	padding-top: 20px;
+}
+h1 {
+	color: #5D710D;
+
 }
 h3 {font-size: 22px;
 	margin-left: 15px;
