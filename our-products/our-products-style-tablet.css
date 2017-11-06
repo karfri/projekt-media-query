@@ -20,10 +20,9 @@ h3 {font-size: 22px;
 	color: #000;
 	}
 h4 {
-	font-family: Handlee, sans-serif;
+	font-family: "Handlee", sans-serif;
 	color: #000;
-	font-size: 4.5em;
-	padding: 28px 0px;
+	font-size: 3.5em;
 	margin: 0;
 }
 h5 {font-size: 15px;
@@ -45,16 +44,13 @@ header {
 	justify-content: flex-end;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: -8px;
 	width: 100%;
 	background-color: #8ABBB1;
-	line-height: 30px;
 	text-align: center;
 	
 }
 #logo{
 	width: 100%;
-	height: auto;
 	padding: 15px;
 	padding-top: 20px;
 	
@@ -132,7 +128,9 @@ p{
 	
 }
 
-
-        
+footer div{
+	display: none;
+	visibility: hidden;
+}
 
 
