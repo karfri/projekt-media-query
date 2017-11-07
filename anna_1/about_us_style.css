@@ -12,7 +12,7 @@ h1, h2, h3, h5{
 }
 h1, h2{
 	color: #5D710D;
-  padding-top: 20px;
+  padding: 20px;
 	text-align: center;
 }
 h3 {
@@ -38,7 +38,8 @@ p {
 header {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: flex-end;
+	justify-content:flex-end;
+	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
 	width: 100%;
@@ -92,8 +93,10 @@ div.socialmedia img:hover {
   height: auto;
 	text-align: center;
 }
-.img_us{
-  height: 180px;
+.karin{
+	background-image:url("images/us/Karin.jpg");
+	background-size: 200px;
+  height: 200px;
   width: 200px;
   border-radius: 50%;
   text-align: center;
@@ -101,6 +104,72 @@ div.socialmedia img:hover {
 	margin-left:auto;
 	margin-right:auto;
 	margin-top: 20px;
+	cursor: pointer;
+}
+.karin:hover{
+	box-sizing: border-box;
+	background-image: url("images/us/cat playing.gif");
+	background-repeat:no-repeat;
+	background-size: 230px;
+	text-align: center;
+	height: 200px;
+	width: 200px;
+	padding: 0;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 20px;
+
+}
+.anton{
+	background-image:url("images/us/Anton.jpg");
+	background-size: 200px;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  text-align: center;
+	padding: 0;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 20px;
+}
+.anton:hover{
+	box-sizing: border-box;
+	background-image: url("images/us/giphy_anton.gif");
+	background-repeat:no-repeat;
+	background-size: 300px;
+	text-align: center;
+	height: 200px;
+	width: 200px;
+	padding: 0;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 20px;
+}
+.anna{
+	background-image:url("images/us/Anna_1.jpg");
+	background-size: 200px;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  text-align: center;
+	padding: 0;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 20px;
+}
+.anna:hover{
+	box-sizing: border-box;
+	background-image: url("images/us/funny-cat-gifs-191-04.gif");
+	background-size: 300px;
+	background-repeat: no-repeat;
+	height: 200px;
+	width: 200px;
+	padding: 0;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 20px;
+	text-align: center;
+	cursor: pointer;
 }
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -189,7 +258,7 @@ body > footer {
 footer {
  display: flex;
  flex: 1 2 auto;
- border-top: 1px solid #fff;
+ border-top: 2px solid #fff;
  flex-flow: nowrap;
  justify-content: space-around;
  color: #fff;
@@ -253,14 +322,24 @@ footer > div > div > img {
 
 /* Media Query for smaller screen*/
 
+}
 @media (max-width: 650px) {
-  	.background_meet_team{
+	div.socialmedia{
+		justify-content: center;
+
+	}body > footer h4 {
+     font-size: 2.7em;
+ }
+
+ body > footer > div > div > img {
+   width: 38px;
+   height: 38px;
+   padding: 1.5px;
+ }
+  .background_meet_team{
 			width: 60%;
 			margin:5px;
 		}
-    .img_us{
-      float: none;
-    }
     .map{
       width:60% ;
       height:60%;
@@ -280,9 +359,11 @@ footer > div > div > img {
 		footer > ul{
 			display: list-item;
 		}
-		.socialmedia{
-			display: none;
+		nav{
+			text-align: center;
+			margin: 0px;
 		}
+
 }
 @media (max-width: 1020px) {
 	.map{
@@ -299,6 +380,7 @@ footer > div > div > img {
 	}
 
 }
+/*
 @media (max-width: 200px) {
 	img .img_us{
 		display: none;
@@ -309,3 +391,4 @@ footer > div > div > img {
 	}.socialmedia {
 		width: 100%;
 	}
+*/
