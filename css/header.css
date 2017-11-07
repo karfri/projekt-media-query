@@ -5,6 +5,23 @@
 
 /* HEADER CSS FOR SMARTPHONE */
 
+/* General Header css */
+
+header h4 {
+	font-family: Handlee, sans-serif;
+	color: #000;
+	font-size: 3.5em;
+	margin: 0;
+}
+
+#logo{
+	width: 100%;
+	height: auto;
+  margin: -15px;
+	padding: 15px;
+	padding-top: -25px;
+}
+
 @media screen and (max-width: 668px) {
 
   header {
