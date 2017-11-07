@@ -94,10 +94,7 @@ div.socialmedia img:hover {
 }
 
 /* MAIN __PAGE content*/
-.web_button{
-	visibility: hidden;
-	display: none;
-}
+
 .background{
   background-color: #FFFFFF;
 	margin:auto;
@@ -334,94 +331,161 @@ footer > div > div > img {
 
 /* Media Query for smaller screen*/
 
+ /* HEADER CSS FOR SMARTPHONE */
+
+ @media screen and (max-width: 668px) {
+.web_button{
+	visibility: visible;
+	display: block;
 }
-@media (max-width: 660px) {
-	.web_button{
-			visibility: visible;
-	    display: block;
-	    border-radius: 10px;
-	    height: 40px;
-	    width: 60px;
-	    border: 2px solid white;
-	}
-	.web_button:hover + nav, nav:hover, nav:focus{
-	   visibility: visible;
-	   display: block;
-	}
-	nav {
-	    font-size: 18px;
-	    font-family: "Montserrat", sans-serif;
-	    width: 100%;
-	    height: 10%;
-	    display: none;
-	}
+   header {
+  	display: flex;
+   	flex-wrap: wrap;
+  	flex-direction: column;
+   	align-items: center;
+  	margin-left: auto;
+   	margin-right: auto;
+   	margin-top: -8px;
+   	width: 100%;
+   	background-color: #8ABBB1;
+   	line-height: 30px;
+   	text-align: center;
+	  }
 
-	div.socialmedia{
-		justify-content: center;
+  #logo{
+   	width: 100%;
+  	height: auto;
+   	padding: 15px;
+  	padding-top: 20px;
+	  }
 
-	}body > footer h4 {
-     font-size: 2.7em;
- }
+	 nav {
+  	font-size: 18px;
+   	font-family: "Montserrat", sans-serif;
+  	width: 100%;
+ 		height: 10%;
+   	padding-bottom: 10px;
+		display: none;
+		 }
 
- body > footer > div > div > img {
-   width: 38px;
-   height: 38px;
-   padding: 1.5px;
- }
-  .background_meet_team{
-			width: 60%;
-			margin:5px;
-		}
-    .map{
-      width:60% ;
-      height:60%;
-      left: 0px;
-			padding-left: 0;
-    }
-		header{
-			width: 100%;
-			text-align: center;
-		}
-		div > img{
-			display: none;
-		}
-		footer > div > h4{
-			display: none;
-		}
-		footer > ul{
-			display: list-item;
-		}
-		nav{
-			text-align: center;
-			margin: 0px;
-		}
+   .socialmedia {
+  	width: 100%;
+		height: 10%;
+		display: flex;
+  	justify-content: center;
+	  }
 
+   .web_button{
+   	display: block;
+   	margin-bottom: 5px;
+   }
+
+  .web_button > img{
+ 		height: 50px;
+  }
+	 .web_button:active + nav {
+       display: block;
+  }
+
+  /*styling header*/
+  nav a {
+   	color:#000;
+   	text-decoration: none;
+   	padding: 30px 5px 0px 5px;
+  	display: list-item;
+   	list-style: none;
+  }
+
+  nav a:hover {
+   	color: #FFF;
+   }
+
+   div.socialmedia img {
+   	height: 40px;
+		width: 40px;
+   	display: list-item;
+   	margin-right: auto;
+	 	margin-left: auto;
+ 		padding: 10px;
+  }
+
+  div.socialmedia img:hover {
+  	filter: invert(90%);
+   }
+	 body > footer h4 {
+    font-size: 2.7em;
+  }
+  body > footer > div > div > img {
+    width: 38px;
+    height: 38px;
+    padding: 1.5px;
+  }
+   .background_meet_team{
+ 			width: 60%;
+ 			margin:5px;
+ 		}
+		.map{
+       width:60% ;
+       height:60%;
+       left: 0px;
+			 padding-left: 0;
+     }
 }
-/*
-@media (max-width: 1020px) {
+
+  /* HEADER CSS FOR TABLET*/
+
+@media screen and (max-width: 1024px) and (min-width:669px) {
 	.map{
 		width: 50%;
 		height: 50%;
 	}
-	header{
-		width: 100%;
+	header {
+	 	display: flex;
+		flex-wrap: wrap;
 		flex-direction: column;
 		justify-content: flex-end;
-		text-align: center;
-		margin-right: auto;
 		margin-left: auto;
+	 	margin-right: auto;
+	  width: 100%;
+	  background-color: #8ABBB1;
+	  line-height: 30px;
+	  text-align: center;
+   }
+	 #logo{
+	 	width: 100%;
+	 	height: auto;
+	 	padding: 15px;
+	 	padding-top: 20px;
+	 	}
+	 nav {
+		font-size: 18px;
+		font-family: "Montserrat", sans-serif;
+		width: 100%;
+		height: 10%;
+		padding-bottom: 10px;
+  }
+
+  .socialmedia {
+		width: 100%;
+		height: 10%;
+}
+  /*styling header*/
+
+nav a {
+	color:#000;
+	text-decoration: none;
+	padding: 30px 5px 0px 5px;
 	}
 
-}*/
-/*
-@media (max-width: 200px) {
-	img .img_us{
-		display: none;
-	}.adress{
-		width: 40%;
-	}.button{
-		width: 50px;
-	}.socialmedia {
-		width: 100%;
-	}
-*/
+nav a:hover {
+	color: #FFF;
+}
+div.socialmedia img {
+	height: 30px;
+	width: 30px;
+}
+div.socialmedia img:hover {
+  filter: invert(90%);
+ }
+
+ }
