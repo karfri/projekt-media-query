@@ -1,11 +1,9 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
-  background-color: #222;
+  background-color: #8abbb1;
   font-family: 'Montserrat', sans-serif;
   font-size: 2em;
-  color: white;
   overflow: visible;
 }
 /* Header with logo, social media*/
@@ -48,19 +46,22 @@ h4 {
  padding-top: 20px;
  margin: 0;
 }
+
+/* --- BODY ---*/
+
 .table-wrapper {
   text-align: center;
-  vertical-align: bottom;
   display: block;
   margin: auto;
   padding: 0;
-  min-height: 214px;
   width: 100%;
   height: 100%;
 }
-
+p > a{
+  text-decoration:none;
+  color: #000;
+}
 .table {
-  height: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -81,39 +82,44 @@ h4 {
 /* Box Title style */
 .table > div > div > p {
   font-family: "Lora";
+  font-size: 40px;
   box-shadow: 10px 10px 6px 0px rgba(0,0,0,0.75);
   border-radius: 5px;
   color: #222;
   background-color: #f1e6b6;
-  padding: 12px 24px 14px;
-  font-size: 2em;
+  padding: 12px 24px;
+  margin: 150px 10px;
   /*display: inline-block;*/
 }
 /* Background for Boxes */
 
 .box1 {
-   background-image: url(om_oss.jpg);
+   background-image: url("images/granola.jpg");
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
+   position: relative;
  }
 .box2 {
-  background-image: url(test.jpg);
+  background-image: url("images/test.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
 }
 .box3 {
-  background-image: url(granola.jpg);
+  background-image: url("images/om_oss.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
 }
 .box4 {
-  background-image: url(shop.jpg);
+  background-image: url("images/shop.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
 }
 
 /* Hover stuff for Boxes */
@@ -128,15 +134,14 @@ h4 {
   display: block;
   text-align: left;
   margin: 0;
-  left: 0px;
-  right: 0px;
+  left: 0;
+  right: 0;
   background-color: rgba(70, 70, 70, 0.7);
   overflow: hidden;
   width: 0;
-  height: 50%;
+  height: 372px;
   transition: 1.4s ease;
 }
-
 .overlay2 {
   position: absolute;
   text-align: left;
@@ -146,7 +151,7 @@ h4 {
   background-color: rgba(70, 70, 70, 0.7);
   overflow: hidden;
   width: 0;
-  height: 50%;
+  height: 372px;
   transition: 1.4s ease;
 }
 
@@ -155,11 +160,11 @@ h4 {
   text-align: left;
   display: block;
   margin: 0;
-  bottom: -297px;
   background-color: rgba(70, 70, 70, 0.7);
   overflow: hidden;
   width: 0;
-  height: 50%;
+  height: 373px;
+  top: 670px;
   transition: 1.4s ease;
 }
 
@@ -169,11 +174,11 @@ h4 {
   display: block;
   margin: 0;
   right: 0px;
-  bottom: -297px;
+  top: 670px;
   background-color: rgba(70, 70, 70, 0.7);
   overflow: hidden;
   width: 0;
-  height: 50%;
+  height: 372px;
   transition: 1.4s ease;
 }
 /* Hover to activate fadein menu */
@@ -187,18 +192,21 @@ h4 {
   font-family: "Lora";
   display: block;
   position: absolute;
-  padding: 15px;
-  max-height: 100%;
+  padding-top: 100px;
+  padding-left: 15px;
   width: 300px;
-  margin: 120px 10px -10px;
+  height: auto;
+  margin: 20px 50px;
   font-size: 16px;
   overflow: hidden;
+  color: #ffffff;
+
 }
 
 /* Small title for fadein menu */
 .sm-title {
   font-size: 1.6em;
-  line-height: 50px;
+  line-height: auto;
   font-family: "Montserrat";
   text-decoration: underline;
 }
@@ -228,97 +236,28 @@ h4 {
     0%   {background-color: rgba(136, 75, 75, 0.2);}
     100% {background-color: inherit;}
 }
+
 /* Media Screens */
 
-/* Width Screens */
-@media screen and (max-width: 550px) {
-  .text {
-    width: 180px;
-    margin: 60px 10px -10px;
-  }
+/* TABLET*/
+
+@media (max-width: 768px) {
+  .text{
+      margin: 0px;
+    }
+
 }
+/* SMARTPHONE*/
 
-@media screen and (max-width: 480px) {
-  .text {
-    width: 180px;
-    margin: 60px 10px -10px;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  .text {
-    width: 160px;
-  }
-}
-
-/* Height screen */
-
-@media screen and (max-height: 850px){
-  .text {
-    margin: 60px 10px -10px;
-  }
-}
-
-@media screen and (max-height: 510px){
-  .text {
-    margin: 10px 10px -10px;
-  }
-  .text > .btn {
+@media screen (max-width: 430px) {
+  .overlay{
     display: none;
   }
-}
-
-@media screen and (max-height: 390px){
-  .box1:hover + .overlay, .box2:hover + .overlay2, .box3:hover + .overlay3, .box4:hover + .overlay4 {
-    width: 0%;
-  }
-  .box1,.box2,.box3,.box4 {
-    padding: 0;
-    margin: 0;
-  }
-  .overlay, .overlay2, .overlay3, .overlay4 {
+  .text{
+    margin: 0px;
+    padding-top: 10px;
+    padding-left: 5px;
+    overflow: visible;
     display: none;
-  }
-}
-
-
-/* Width and Height screens */
-
-@media screen and (max-height: 650px), (max-width: 420px) {
-  .text {
-    margin: 10px 10px -10px;
-  }
-
-}
-
-@media screen and (max-height: 600px), (max-width: 800px){
-  .table > div > div > p {
-    font-size: 0.8em;
-  }
-}
-
-@media screen and (max-height: 480px), (max-width: 650px){
-  .table > div > div > p {
-    font-size: 0.6em;
-  }
-  .header{
-    width: 100%;
-  }
-}
-
-@media screen and (max-height: 400px), (max-width: 580px){
-  .table > div > div > p {
-    font-size: 0.4em;
-  }
-
-  @media screen and (max-height: 215px){
-    .table > div > div > p {
-      font-size: 0.35em;
-      margin: 10px;
-      padding: 8px 18px;
-    }
-    .table > div > div {
-      margin-top: -20px;
-    }
   }
 }
