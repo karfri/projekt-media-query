@@ -1,5 +1,4 @@
 html, body {
-  margin: 0;
   padding: 0;
   background-image: url(../images/burlap_seamless.jpg);
   color: #222;
@@ -671,7 +670,7 @@ div.socialmedia img:hover {
 
 /* Designer choices */
 
-h4 {
+footer h4 {
   font-family: 'Handlee', sans-serif;
   color: #000;
   font-size: 3.5em;
