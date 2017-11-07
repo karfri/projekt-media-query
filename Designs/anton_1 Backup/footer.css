@@ -1,0 +1,87 @@
+body {
+
+	font-family: 'Source Sans Pro', sans-serif;
+	background-image: url("mikesh-kaos-42527.jpg");
+	background-attachment: fixed;
+}
+h5 {
+	letter-spacing: 0.45em;
+	font-size: 1.4em;
+}
+
+.wrapper{
+	margin: 100px 100px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: white;
+
+
+}
+.firstline{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+}
+.secondline{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+}
+.thirdline{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+}
+.fourthline{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+}
+
+
+.firstline > div, .secondline > div {
+	width: 50%;
+	padding: 0px 20px;
+	text-align: center;
+	color: #B97F6D;;
+	box-sizing: border-box;
+}
+
+
+.firstline > img {
+	width: 25%;
+  height: 100%;
+}
+
+.secondline > img {
+	width: 50%;
+  height: 100%;
+}
+
+.thirdline > div {
+	width: 25%;
+	flex: 2 2 25%;
+	padding: 0px 10px;
+	text-align: left;
+	color: #B97F6D;
+	box-sizing: border-box;
+	background-color: lightgrey;
+}
+
+.fourthline > img {
+	background-color: lightgrey;
+	width: 25%;
+  height: 100%;
+	flex: 1 1 25%;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+#beige {
+	background-color: #F5F5DC;
+}

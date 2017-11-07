@@ -196,16 +196,12 @@ body > footer > div > div {
  justify-content: center;
 }
 
-body > footer > div > div > img {
- width: 48px;
- height: 48px;
- padding: 3px;
-}
+body > footer h4 {
+     font-size: 2.7em;
+ }
 
-
-
-
-
-        
-
-
+ body > footer > div > div > img {
+   width: 38px;
+   height: 38px;
+   padding: 1.5px;
+ }

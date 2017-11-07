@@ -1,0 +1,148 @@
+/*HEADER*/
+.web_button{
+  display: none;
+}
+
+/* HEADER CSS FOR SMARTPHONE */
+
+@media screen and (max-width: 668px) {
+
+  header {
+  	display: flex;
+  	flex-wrap: wrap;
+  	flex-direction: column;
+  	align-items: center;
+  	margin-left: auto;
+  	margin-right: auto;
+  	margin-top: -8px;
+  	width: 100%;
+  	background-color: #8ABBB1;
+  	line-height: 30px;
+  	text-align: center;
+
+  }
+  #logo{
+  	width: 100%;
+  	height: auto;
+  	padding: 15px;
+  	padding-top: 20px;
+  }
+
+  nav {
+  	font-size: 18px;
+  	font-family: "Montserrat", sans-serif;
+  	width: 100%;
+  	height: 10%;
+  	padding-bottom: 10px;
+  	display: none;
+  }
+
+  .socialmedia {
+  	width: 100%;
+  	height: 10%;
+  	display: flex;
+  	justify-content: center;
+  }
+
+  .web_button{
+  	display: block;
+  	margin-bottom: 5px;
+  }
+
+  .web_button > img{
+  	height: 50px;
+  }
+
+  .web_button:active + nav {
+      display: block;
+  }
+
+  /*styling header*/
+
+  nav a {
+  	color:#000;
+  	text-decoration: none;
+  	padding: 30px 5px 0px 5px;
+  	display: list-item;
+  	list-style: none;
+  }
+
+  nav a:hover {
+  	color: #FFF;
+  }
+
+  div.socialmedia img {
+  	height: 40px;
+    width: 40px;
+  	display: list-item;
+  	margin-right: auto;
+  	margin-left: auto;
+  	padding: 10px;
+  }
+  div.socialmedia img:hover {
+  	filter: invert(90%);
+  }
+}
+
+
+  /* HEADER CSS FOR TABLET*/
+
+@media screen and (max-width: 1024px) and (min-width:669px) {
+  header {
+  	display: flex;
+  	flex-wrap: wrap;
+  	flex-direction: column;
+  	justify-content: flex-end;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 100%;
+  	background-color: #8ABBB1;
+  	line-height: 30px;
+  	text-align: center;
+
+  }
+  #logo{
+  	width: 100%;
+  	height: auto;
+  	padding: 15px;
+  	padding-top: 20px;
+
+  }
+
+  nav {
+  	font-size: 18px;
+  	font-family: "Montserrat", sans-serif;
+  	width: 100%;
+  	height: 10%;
+  	padding-bottom: 10px;
+
+  }
+
+  .socialmedia {
+  	width: 100%;
+  	height: 10%;
+  }
+
+  /*styling header*/
+
+  nav a {
+  	color:#000;
+  	text-decoration: none;
+  	padding: 30px 5px 0px 5px;
+
+  }
+
+  nav a:hover {
+  	color: #FFF;
+  }
+
+  div.socialmedia img {
+  	height: 30px;
+    width: 30px;
+
+  }
+  div.socialmedia img:hover {
+  	filter: invert(90%);
+  }
+
+}
