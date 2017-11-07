@@ -336,58 +336,100 @@ footer > div > div > img {
 	visibility: visible;
 	display: block;
 }
-   header {
-  	display: flex;
-   	flex-wrap: wrap;
-  	flex-direction: column;
-   	align-items: center;
-  	margin-left: auto;
-   	margin-right: auto;
-   	margin-top: -8px;
-   	width: 100%;
-   	background-color: #8ABBB1;
-   	line-height: 30px;
-   	text-align: center;
-	  }
+header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -8px;
+    width:100%;
+    background-color: #8ABBB1;
+    line-height: 30px;
+    text-align: center;
+}
 
-  #logo{
-   	width: 100%;
-  	height: auto;
-   	padding: 15px;
-  	padding-top: 20px;
-	  }
+#logo{
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    padding-top: 20px;
+}
 
-	 nav {
-  	font-size: 18px;
-   	font-family: "Montserrat", sans-serif;
-  	width: 100%;
- 		height: 10%;
-   	padding-bottom: 10px;
-		display: none;
-		 }
+nav {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    height: 10%;
+    display: none;
+}
 
-   .socialmedia {
-  	width: 100%;
-		height: 10%;
-		display: flex;
-  	justify-content: center;
-	  }
+.socialmedia {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
-   .web_button{
-   	display: block;
-   	margin-bottom: 5px;
-   }
+.web_button{
+    display: block;
+    border-radius: 10px;
+    height: 40px;
+    width: 60px;
+    border: 2px solid white;
+}
 
-  .web_button > img{
- 		height: 50px;
-  }
-	 .web_button:active + nav {
-       display: block;
-  }
+.web_button:hover + nav, nav:hover, nav:focus{
+   visibility: visible;
+   display: block;
 
-  nav a:hover {
-   	color: #FFF;
-   }
+}
+
+/*styling header*/
+
+nav a {
+	color:#000;
+	text-decoration: none;
+	padding: 30px 5px 0px 5px;
+	display: list-item;
+	list-style: none;
+}
+
+nav a:hover {
+	color: #FFF;
+}
+
+div.socialmedia img {
+	height: 40px;
+	display: list-item;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 5px;
+}
+div.socialmedia img:hover {
+	filter: invert(90%);
+}
+ .web_button:active + nav {
+   display: block;
+}
+	nav a {
+		color:#000;
+		text-decoration: none;
+		padding: 30px 5px 0px 5px;
+		}
+
+	nav a:hover {
+		color: #FFF;
+	}
+	div.socialmedia img {
+		height: 30px;
+		width: 30px;
+	}
+	div.socialmedia img:hover {
+	  filter: invert(90%);
+	 }
 
    div.socialmedia img {
    	height: 40px;
@@ -404,6 +446,7 @@ footer > div > div > img {
 	 body > footer h4 {
     font-size: 2.7em;
   }
+
   body > footer > div > div > img {
     width: 38px;
     height: 38px;
@@ -412,13 +455,13 @@ footer > div > div > img {
    .background_meet_team{
  			width: 60%;
  			margin:5px;
- 		}
-		.map{
-       width:60% ;
-       height:60%;
-       left: 0px;
-			 padding-left: 0;
-     }
+ 	}
+	.map{
+    width:60% ;
+    height:60%;
+    left: 0px;
+		padding-left: 0;
+    }
 }
 
   /* HEADER CSS FOR TABLET*/
