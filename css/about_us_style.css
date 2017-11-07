@@ -46,6 +46,7 @@ header {
 	border-radius: 10px;
 }
 #logo{
+
 	width: 100%;
 	height: auto;
 	padding-bottom: 0px;
@@ -57,9 +58,7 @@ nav {
 	font-family: "Montserrat", sans-serif;
 	width: 70%;
 	height: 10%;
-	padding-top:10px;
 	text-align: center;
-
 }
 
 .socialmedia {
@@ -73,7 +72,6 @@ nav a {
 	color:#000;
 	text-decoration: none;
 	padding: 30px 5px 0px 5px;
-
 }
 
 nav a:hover {
@@ -103,7 +101,7 @@ div.socialmedia img:hover {
 	text-align: center;
 }
 .karin{
-	background-image:url("images/us/Karin.jpg");
+	background-image:url("../images/about/us/Karin.jpg");
 	background-size: 200px;
   height: 200px;
   width: 200px;
@@ -117,7 +115,7 @@ div.socialmedia img:hover {
 }
 .karin:hover{
 	box-sizing: border-box;
-	background-image: url("images/us/cat playing.gif");
+	background-image: url("../images/about/us/cat playing.gif");
 	background-repeat:no-repeat;
 	background-size: 230px;
 	text-align: center;
@@ -130,7 +128,7 @@ div.socialmedia img:hover {
 
 }
 .anton{
-	background-image:url("images/us/Anton.jpg");
+	background-image:url("../images/about/us/Anton.jpg");
 	background-size: 200px;
   height: 200px;
   width: 200px;
@@ -143,7 +141,7 @@ div.socialmedia img:hover {
 }
 .anton:hover{
 	box-sizing: border-box;
-	background-image: url("images/us/giphy_anton.gif");
+	background-image: url("../images/about/us/giphy_anton.gif");
 	background-repeat:no-repeat;
 	background-size: 300px;
 	text-align: center;
@@ -155,7 +153,7 @@ div.socialmedia img:hover {
 	margin-top: 20px;
 }
 .anna{
-	background-image:url("images/us/Anna_1.jpg");
+	background-image:url("../images/about/us/Anna_1.jpg");
 	background-size: 200px;
   height: 200px;
   width: 200px;
@@ -168,7 +166,7 @@ div.socialmedia img:hover {
 }
 .anna:hover{
 	box-sizing: border-box;
-	background-image: url("images/us/funny-cat-gifs-191-04.gif");
+	background-image: url("../images/about/us/funny-cat-gifs-191-04.gif");
 	background-size: 300px;
 	background-repeat: no-repeat;
 	height: 200px;
@@ -385,15 +383,6 @@ footer > div > div > img {
   }
 	 .web_button:active + nav {
        display: block;
-  }
-
-  /*styling header*/
-  nav a {
-   	color:#000;
-   	text-decoration: none;
-   	padding: 30px 5px 0px 5px;
-  	display: list-item;
-   	list-style: none;
   }
 
   nav a:hover {

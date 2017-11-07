@@ -94,28 +94,28 @@ p > a{
 /* Background for Boxes */
 
 .box1 {
-   background-image: url("images/granola.jpg");
+   background-image: url("../images/granola.jpg");
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
    position: relative;
  }
 .box2 {
-  background-image: url("images/test.jpg");
+  background-image: url("../images/test.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;
 }
 .box3 {
-  background-image: url("images/om_oss.jpg");
+  background-image: url("../images/om_oss.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;
 }
 .box4 {
-  background-image: url("images/shop.jpg");
+  background-image: url("../images/shop.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
