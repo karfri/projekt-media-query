@@ -1,0 +1,20 @@
+<header>
+    <div id = "logo">
+      <h4>La Rango</h4>
+    </div>
+    <button class = "web_button">Menu</button> 
+   <nav> 
+      <a href="https://karfri.github.io/projekt-media-query/anton_1/index.html">Home</a>
+      <a href="https://karfri.github.io/projekt-media-query/our-products/our-products.html">Products</a>
+      <a href="https://karfri.github.io/projekt-media-query/our-vision2/our-vision2.html">Vision</a>
+      <a href="https://karfri.github.io/projekt-media-query/anna_1/about_us.html">About Us</a>
+      <a href="#">Store</a>
+    </nav>
+     <div class = "socialmedia">
+      <a href="#"><img src="header/facebook.png"></a>
+      <a href="#"><img src="header/instagram.png"></a>
+      <a href="#"><img src="header/twitter.png"></a>
+      <a href="#"><img src="header/linkedin.png"></a>
+    </div>
+
+</header>

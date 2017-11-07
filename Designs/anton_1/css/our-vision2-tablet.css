@@ -1,0 +1,224 @@
+/*GENERAL*/
+body {
+	background-image: url("burlap_seamless.jpg");
+	background-repeat: repeat;
+	background-attachment: fixed;
+
+}
+h1, h3, h5{
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 20px;
+}
+h1 {
+	color: #5D710D;
+
+}
+h3 {font-size: 22px;
+	margin-left: 15px;
+	color: #000;
+	}
+h4 {
+	font-family: Handlee, sans-serif;
+	color: #000;
+	font-size: 3.5em;
+	margin: 0;
+}
+h5 {font-size: 15px;
+	text-transform: uppercase;
+	color: #5D710D;}
+
+
+button {
+	background-color: #8ABBB1;
+	display:none;
+}
+/*HEADER*/
+
+/*HEADER-Containers*/
+header {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: flex-end;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	background-color: #8ABBB1;
+	line-height: 30px;
+	text-align: center;
+	
+}
+#logo{
+	width: 100%;
+	height: auto;
+	padding: 15px;
+	padding-top: 20px;
+	
+}
+
+nav {
+	font-size: 18px;
+	font-family: "Montserrat", sans-serif;
+	width: 100%;
+	height: 10%;
+	padding-bottom: 10px;
+	
+}
+
+.socialmedia {
+	width: 100%;
+	height: 10%;
+}
+
+/*styling header*/
+
+nav a {
+	color:#000;
+	text-decoration: none;
+	padding: 30px 5px 0px 5px;
+
+}
+
+nav a:hover {
+	color: #FFF;
+}
+
+div.socialmedia img {
+	height: 30px;
+
+}
+div.socialmedia img:hover {
+	filter: invert(90%);
+}
+
+/*PAGE CONTENT*/
+.container {
+	width: 90%;
+}
+p{font-family: "Roboto";}
+
+/*Maintext centered*/
+.container-info {
+	width: 70%;
+	height: 40%;
+	margin-top: 50px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.container-info div:first-child {
+	margin: auto;
+	width: 100%;
+	background-color: white;
+	padding: 5px 50px 15px 50px;
+	text-align: center;
+	
+}
+.container-info img {
+	width: 95%;
+	height: 100%;
+}
+
+/*picture and text right side*/
+.container-side {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 30px 15px;
+	text-align: left;
+	margin-top: 0px;
+
+	
+}
+
+.container-side div  {
+	width: 70%;
+	background-color: white;
+	padding: 25px;
+	margin-bottom: 25px;
+	margin-left: 18%;
+
+}
+.container-side div:first-child {
+	display: none;
+}
+
+.container-side img {
+	width: 100%;
+	height: 100%;
+	display: none;
+
+}
+
+/*FOOTER*/
+
+body > footer {
+   margin: 2% 7% 20px;
+ }
+
+body > footer {
+ display: flex;
+ flex: 1 2 auto;
+ border-top: 1px solid #fff;
+ flex-flow: nowrap;
+ justify-content: space-around;
+ color: #fff;
+ background-color: rgba(165, 165, 165, 0.48);
+ break-before: always;
+ margin: 20px 15% 0;
+ padding: 10px;
+}
+
+body > footer > div > ul > li:first-child {
+ font-family: "Roboto", sans-serif;
+ line-height: 24px;
+ margin-bottom: 8px;
+ font-size: 1.3em;
+ color: #000;
+}
+
+body > footer > div > ul {
+ list-style: none;
+ color: #000;
+ padding: 0;
+ margin: 25px 0;
+}
+
+/* Link */
+
+/* Set position relative to parent element */
+body > footer > div > ul > li {
+ position: relative;
+ margin: 1px 0;
+}
+
+/* Position absolute on "a"-element, 100% width & height. */
+body > footer > div > ul > li > a {
+ position: absolute;
+ height: 100%;
+ width: 100%;
+}
+
+/* Double :not */
+body > footer > div:not(:nth-child(4)) > ul > li:not(:first-child):hover {
+ color: #ddd674;}
+
+body > footer > div:first-child {
+ display: flex;
+ flex-direction: column;
+ display: none;
+}
+body > footer > div > div {
+ display: flex;
+ margin-top: -10px;
+ justify-content: center;
+}
+
+body > footer > div > div > img {
+ width: 48px;
+ height: 48px;
+ padding: 3px;
+}
+

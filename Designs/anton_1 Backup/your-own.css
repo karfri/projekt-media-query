@@ -1,0 +1,158 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #000;
+  color: #222;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+}
+
+body > section {
+  overflow: auto;
+  flex: 0 2 auto;
+  background-color: #fff;
+  margin: 30px 15px;
+  padding: 20px;
+}
+
+.container {
+  flex: 0 0 300px;
+  display: flex;
+  background-color: #333;
+  display: block;
+  margin: 30px 15px;
+  padding: 30px;
+}
+
+section > p, section > h1 {
+  padding: 5px 10px;
+}
+
+.container img {
+  display: flex;
+  width: 100%;
+  height: 25%;
+  margin: 0;
+  padding: 0;
+}
+
+input[type="radio"] {
+  position: absolute;
+  display: none;
+  left: -999999px;
+  top: -999999px;
+  opacity: 0;
+}
+
+img + form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding: 0;
+}
+
+input + label {
+  display: flex;
+  flex: 1 1 auto;
+  flex-flow: nowrap;
+  padding: 15px 10px;
+  background-color: #ab5c00;
+  justify-content: center;
+}
+
+input[type="radio"]:checked + label {
+  background-color: #80ced6;
+}
+
+input[type="radio"]:checked + label > div + div {
+  display: block;
+}
+input[type="radio"]:checked + label + div {
+  display: flex;
+  flex-flow: nowrap;
+  flex: 1 1 auto;
+  flex-direction: column;
+  background-color: #80ced6;
+}
+
+.box1,.box2,.box3 {
+  display: none;
+  width: 100%;
+  order: 1;
+}
+
+.box1 p, .box2 p, .box3 p {
+  display: flex;
+  margin: 0;
+  padding: 20px 35px;
+}
+
+label + div > .title {
+  font-family: lora;
+  flex: 1 1 auto;
+  font-size: 2em;
+  margin: 20px auto 5px;
+  padding: 3px;
+  border-bottom: 1px solid #222;
+}
+
+label + div > div > input {
+  position: absolute;
+  display: none;
+}
+.box-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+input[type="checkbox"] + label {
+  display: flex;
+  flex: 1 1 auto;
+  flex-flow: wrap;
+  background-color: #ab5c00;
+  transition: 0.1s ease;
+}
+input[type="checkbox"]:checked + label {
+  background-color: rgb(46, 237, 47);
+}
+
+form + footer {
+  display: flex;
+  flex: 1 1 auto;
+  background-color: #222;
+}
+
+form + footer > .buy-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  width: 50%;
+  text-align: center;
+  padding: 10px 30px;
+  margin: 20px auto 20px;
+  border-radius: 3px;
+  box-shadow: 1px 1px #222;
+}
+
+.buy-btn:hover {
+  background-color: #ddd;
+}
+
+form + footer > .buy-btn > a {
+  position: absolute;
+  border-radius: 3px;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+form + footer > p {
+  padding: 5px;
+}
