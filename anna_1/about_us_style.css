@@ -8,10 +8,12 @@ h1, h2, h3, h5{
 	font-family: "Montserrat", sans-serif;
 	font-weight: bold;
   color: #5D710D;
-  text-align: center;
+	text-align: center;
 }
-h1{
+h1, h2{
+	color: #5D710D;
   padding-top: 20px;
+	text-align: center;
 }
 h3 {
 	color: #000;
@@ -22,7 +24,7 @@ h4 {
   color: #000;
   font-size: 3.5em;
   padding: 0;
-  margin: 0;
+	margin: 10px 25px 15px;
 }
 
 p {
@@ -33,15 +35,15 @@ p {
 
 /*HEADER*/
 
-/*HEADER-Containers*/
 header {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-end;
 	margin-left: auto;
 	margin-right: auto;
-	width: 60%;
-	background-color: #8ABBB1;
+	width: 100%;
+	background: #8abbb1;
+
 }
 #logo{
 	width: 100%;
@@ -55,6 +57,7 @@ nav {
 	width: 70%;
 	height: 10%;
 	padding-bottom: 10px;
+	text-align: center;
 }
 
 .socialmedia {
@@ -84,42 +87,51 @@ div.socialmedia img:hover {
 
 .background{
   background-color: #FFFFFF;
-  margin-left: auto;
-	margin-right: auto;
-	width: 70%;
+	margin:auto;
+	width: 80%;
   height: auto;
+	text-align: center;
 }
 .img_us{
-  height: 200px;
+  height: 180px;
   width: 200px;
   border-radius: 50%;
   text-align: center;
-  position: relative;
-  filter: grayscale(100%);
-  float: left;
+	padding: 0;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 20px;
 }
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 270px;
+    margin: 15px;
+		padding: 5px;
+		background-color: #FFE4C4;
+		display: inline-block;
+		vertical-align:text-top;
+		height: auto;
+	}
 
-.dropdown{
-  margin: 5px 5px;
-  padding: 20px;
-  text-align: left;
-  position: relative;
+.titel{
+	font-size: 18px;
+	font-family: "Roboto", sans-serif;
+	text-align: center;
+	}
 
-}
 .text{
+	padding: 5px;
   position: relative;
   max-width: auto;
   max-height: auto;
   display: block;
   overflow: auto;
-}
-.img_us:hover{
-  cursor: pointer;
-  filter: grayscale(0%);
-  transition: 0.5s easy-in-out;
+	text-align: center;
 }
 
-/* FORM, CONTACT */
+
+/* FORM and CONTACT */
+
 .adress{
   text-align: center;
   position: relative;
@@ -131,8 +143,7 @@ div.socialmedia img:hover {
 .map{
   text-align: center;
   position: relative;
-  left: 120px;
-  padding: 20px;
+	padding: 30px 100px;
   margin:  10px 10px;
 }
 .contact{
@@ -171,34 +182,82 @@ div.socialmedia img:hover {
 }
 
 /* FOOTER */
-footer{
-  font-family: "Roboto";
-	margin-left: auto;
-	margin-right: auto;
-	width: 70%;
-	background-color: rgba(255,255,255, 0.2 );
+body > footer {
+   margin: 2% 10% 20px;
+ }
+
+footer {
+ display: flex;
+ flex: 1 2 auto;
+ border-top: 1px solid #fff;
+ flex-flow: nowrap;
+ justify-content: space-around;
+ color: #fff;
+ background-color: rgba(165, 165, 165, 0.48);
+ break-before: always;
+ margin: 20px 15% 0;
+ padding: 10px;
 }
-ul{
-  list-style: none;
-  display: inline;
+footer > div > ul > li:first-child {
+ font-family: "Lora", sans-serif;
+ line-height: 24px;
+ margin-bottom: 8px;
+ font-size: 1.3em;
+ color: #000;
 }
-.social_footer img{
-  width: 40px;
-  height: 40px;
-  display: inline;
+
+footer > div > ul {
+ list-style: none;
+ color: #000;
+ padding: 0;
+ margin: 25px 0;
 }
- li:hover{
-  color:#FFD700;
+
+/* Link */
+
+/* Set position relative to parent element */
+footer > div > ul > li {
+ position: relative;
+ margin: 1px 0;
+}
+
+/* Position absolute on "a"-element, 100% width & height. */
+footer > div > ul > li > a {
+ position: absolute;
+ height: 100%;
+ width: 100%;
+}
+
+/* Double :not */
+footer > div:not(:nth-child(4)) > ul > li:not(:first-child):hover {
+ color: #ddd674 ;
+
+}
+
+footer > div:first-child {
+ display: flex;
+ flex-direction: column;
+}
+footer > div > div {
+ display: flex;
+ margin-top: -20px;
+ justify-content: center;
+}
+
+footer > div > div > img {
+ width: 48px;
+ height: 48px;
+ padding: 3px;
 }
 
 
 /* Media Query for smaller screen*/
 
 @media (max-width: 650px) {
-    .dropdown {
-        width: 90%;
-        display: block;
-    }
+  	.background_meet_team{
+			width: 60%;
+			margin:5px;
+		}
     .img_us{
       float: none;
     }
@@ -206,12 +265,47 @@ ul{
       width:60% ;
       height:60%;
       left: 0px;
+			padding-left: 0;
     }
-    /*.hamburger{
-    visibility: visible;
-    width: 35px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0;
-  }*/
+		header{
+			width: 100%;
+			text-align: center;
+		}
+		div > img{
+			display: none;
+		}
+		footer > div > h4{
+			display: none;
+		}
+		footer > ul{
+			display: list-item;
+		}
+		.socialmedia{
+			display: none;
+		}
 }
+@media (max-width: 1020px) {
+	.map{
+		width: 50%;
+		height: 50%;
+	}
+	header{
+		width: 100%;
+		flex-direction: column;
+		justify-content: flex-end;
+		text-align: center;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+}
+@media (max-width: 200px) {
+	img .img_us{
+		display: none;
+	}.adress{
+		width: 40%;
+	}.button{
+		width: 50px;
+	}.socialmedia {
+		width: 100%;
+	}
