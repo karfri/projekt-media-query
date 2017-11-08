@@ -11,7 +11,7 @@ header h4 {
 	font-family: 'Handlee', sans-serif;
 	color: #000;
 	font-size: 3.5em;
-	margin: 0;
+	margin: 10px 25px 15px;
 }
 
 #logo {
@@ -135,9 +135,8 @@ header h4 {
   header h4 {
   	font-family: 'Handlee', sans-serif;
   	color: #000;
-    padding: 20px 0px;
   	font-size: 3.5em;
-  	margin: 0;
+  	margin: 10px 25px 15px;
   }
 
   #logo{
