@@ -1,8 +1,10 @@
 /*GENERAL*/
 body {
-	background-image: url("http://www.zingerbug.com/Backgrounds/background_images/burlap_seamless.jpg");
+	background-image: url(../images/burlap_seamless.jpg);
 	background-repeat: repeat;
 	background-attachment: fixed;
+	margin: 0px;
+	padding: 0px;
 }
 h1, h2, h3, h5{
 	font-family: "Montserrat", sans-serif;
