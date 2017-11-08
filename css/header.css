@@ -3,18 +3,18 @@
   display: none;
 }
 
-/* HEADER CSS FOR SMARTPHONE */
+
 
 /* General Header css */
 
 header h4 {
-	font-family: Handlee, sans-serif;
+	font-family: 'Handlee', sans-serif;
 	color: #000;
 	font-size: 3.5em;
 	margin: 0;
 }
 
-#logo{
+#logo {
 	width: 100%;
 	height: auto;
   margin: -15px;
@@ -22,7 +22,18 @@ header h4 {
 	padding-top: -25px;
 }
 
+
+/* HEADER CSS FOR SMARTPHONE */
+
 @media screen and (max-width: 668px) {
+
+  h4 {
+  	font-family: "Handlee", sans-serif;
+  	color: #000;
+  	font-size: 3.5em;
+  	margin: 0;
+    padding: 20px 0px;
+  }
 
   header {
   	display: flex;
@@ -32,6 +43,7 @@ header h4 {
   	margin-left: auto;
   	margin-right: auto;
   	margin-top: -8px;
+    border-radius: 0;
   	width: 100%;
   	background-color: #8ABBB1;
   	line-height: 30px;
@@ -41,6 +53,7 @@ header h4 {
   #logo{
   	width: 100%;
   	height: auto;
+    margin: 0;
   	padding: 15px;
   	padding-top: 20px;
   }
@@ -116,14 +129,23 @@ header h4 {
   	background-color: #8ABBB1;
   	line-height: 30px;
   	text-align: center;
-
+    border-radius: 0;
   }
+
+  header h4 {
+  	font-family: 'Handlee', sans-serif;
+  	color: #000;
+    padding: 20px 0px;
+  	font-size: 3.5em;
+  	margin: 0;
+  }
+
   #logo{
   	width: 100%;
   	height: auto;
+    margin: 0;
   	padding: 15px;
   	padding-top: 20px;
-
   }
 
   nav {
