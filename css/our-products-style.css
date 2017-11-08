@@ -130,17 +130,15 @@ p{
 	width: 100%;
 }
 
-/*FOOTER*/
-
+/* FOOTER */
 body > footer {
-   margin: 2% 7% 20px;
-
+   margin: 2% 10% 20px;
  }
 
-body > footer {
+footer {
  display: flex;
  flex: 1 2 auto;
- border-top: 1px solid #fff;
+ border-top: 2px solid #fff;
  flex-flow: nowrap;
  justify-content: space-around;
  color: #fff;
@@ -148,18 +146,16 @@ body > footer {
  break-before: always;
  margin: 20px 15% 0;
  padding: 10px;
-
 }
-
-body > footer > div > ul > li:first-child {
- font-family: "Roboto", sans-serif;
+footer > div > ul > li:first-child {
+ font-family: "Lora", sans-serif;
  line-height: 24px;
  margin-bottom: 8px;
  font-size: 1.3em;
  color: #000;
 }
 
-body > footer > div > ul {
+footer > div > ul {
  list-style: none;
  color: #000;
  padding: 0;
@@ -169,25 +165,38 @@ body > footer > div > ul {
 /* Link */
 
 /* Set position relative to parent element */
-body > footer > div > ul > li {
+footer > div > ul > li {
  position: relative;
  margin: 1px 0;
 }
 
 /* Position absolute on "a"-element, 100% width & height. */
-body > footer > div > ul > li > a {
+footer > div > ul > li > a {
  position: absolute;
  height: 100%;
  width: 100%;
 }
 
 /* Double :not */
-body > footer > div:not(:nth-child(4)) > ul > li:not(:first-child):hover {
- color: #ddd674;}
+footer > div:not(:nth-child(4)) > ul > li:not(:first-child):hover {
+ color: #ddd674 ;
 
-body > footer > div:first-child {
+}
+
+footer > div:first-child {
  display: flex;
  flex-direction: column;
+}
+footer > div > div {
+ display: flex;
+ margin-top: -20px;
+ justify-content: center;
+}
+
+footer > div > div > img {
+ width: 48px;
+ height: 48px;
+ padding: 3px;
 }
 body > footer > div > div {
  display: flex;
