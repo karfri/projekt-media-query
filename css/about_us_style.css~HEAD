@@ -1,6 +1,6 @@
 /*GENERAL*/
 body {
-	background-image: url("http://www.zingerbug.com/Backgrounds/background_images/burlap_seamless.jpg");
+	background-image: url(../images/burlap_seamless.jpg);
 	background-repeat: repeat;
 	background-attachment: fixed;
 }
@@ -46,7 +46,6 @@ header {
 	border-radius: 10px;
 }
 #logo{
-
 	width: 100%;
 	height: auto;
 	padding-bottom: 0px;
@@ -58,7 +57,9 @@ nav {
 	font-family: "Montserrat", sans-serif;
 	width: 70%;
 	height: 10%;
+	padding-top:10px;
 	text-align: center;
+
 }
 
 .socialmedia {
@@ -72,6 +73,7 @@ nav a {
 	color:#000;
 	text-decoration: none;
 	padding: 30px 5px 0px 5px;
+
 }
 
 nav a:hover {
@@ -101,7 +103,7 @@ div.socialmedia img:hover {
 	text-align: center;
 }
 .karin{
-	background-image:url("../images/about/us/Karin.jpg");
+	background-image:url("../images/us/Karin.jpg");
 	background-size: 200px;
   height: 200px;
   width: 200px;
@@ -115,7 +117,7 @@ div.socialmedia img:hover {
 }
 .karin:hover{
 	box-sizing: border-box;
-	background-image: url("../images/about/us/cat playing.gif");
+	background-image: url(../images/us/cat playing.gif);
 	background-repeat:no-repeat;
 	background-size: 230px;
 	text-align: center;
@@ -128,7 +130,7 @@ div.socialmedia img:hover {
 
 }
 .anton{
-	background-image:url("../images/about/us/Anton.jpg");
+	background-image:url("../images/us/Anton.jpg");
 	background-size: 200px;
   height: 200px;
   width: 200px;
@@ -141,7 +143,7 @@ div.socialmedia img:hover {
 }
 .anton:hover{
 	box-sizing: border-box;
-	background-image: url("../images/about/us/giphy_anton.gif");
+	background-image: url(../images/us/giphy_anton.gif);
 	background-repeat:no-repeat;
 	background-size: 300px;
 	text-align: center;
@@ -153,7 +155,7 @@ div.socialmedia img:hover {
 	margin-top: 20px;
 }
 .anna{
-	background-image:url("../images/about/us/Anna_1.jpg");
+	background-image:url(../images/us/Anna_1.jpg);
 	background-size: 200px;
   height: 200px;
   width: 200px;
@@ -166,7 +168,7 @@ div.socialmedia img:hover {
 }
 .anna:hover{
 	box-sizing: border-box;
-	background-image: url("../images/about/us/funny-cat-gifs-191-04.gif");
+	background-image: url(../images/us/funny-cat-gifs-191-04.gif);
 	background-size: 300px;
 	background-repeat: no-repeat;
 	height: 200px;
@@ -336,100 +338,67 @@ footer > div > div > img {
 	visibility: visible;
 	display: block;
 }
-header {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -8px;
-    width:100%;
-    background-color: #8ABBB1;
-    line-height: 30px;
-    text-align: center;
-}
+   header {
+  	display: flex;
+   	flex-wrap: wrap;
+  	flex-direction: column;
+   	align-items: center;
+  	margin-left: auto;
+   	margin-right: auto;
+   	margin-top: -8px;
+   	width: 100%;
+   	background-color: #8ABBB1;
+   	line-height: 30px;
+   	text-align: center;
+	  }
 
-#logo{
-    width: 100%;
-    height: auto;
-    padding: 15px;
-    padding-top: 20px;
-}
+  #logo{
+   	width: 100%;
+  	height: auto;
+   	padding: 15px;
+  	padding-top: 20px;
+	  }
 
-nav {
-    font-size: 18px;
-    font-family: "Montserrat", sans-serif;
-    width: 100%;
-    height: 10%;
-    display: none;
-}
+	 nav {
+  	font-size: 18px;
+   	font-family: "Montserrat", sans-serif;
+  	width: 100%;
+ 		height: 10%;
+   	padding-bottom: 10px;
+		display: none;
+		 }
 
-.socialmedia {
-    width: 100%;
-    height: 10%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
+   .socialmedia {
+  	width: 100%;
+		height: 10%;
+		display: flex;
+  	justify-content: center;
+	  }
 
-.web_button{
-    display: block;
-    border-radius: 10px;
-    height: 40px;
-    width: 60px;
-    border: 2px solid white;
-}
+   .web_button{
+   	display: block;
+   	margin-bottom: 5px;
+   }
 
-.web_button:hover + nav, nav:hover, nav:focus{
-   visibility: visible;
-   display: block;
+  .web_button > img{
+ 		height: 50px;
+  }
+	 .web_button:active + nav {
+       display: block;
+  }
 
-}
+  /*styling header*/
+  nav a {
+   	color:#000;
+   	text-decoration: none;
+   	padding: 30px 5px 0px 5px;
+  	display: list-item;
+   	list-style: none;
+  }
 
-/*styling header*/
-
-nav a {
-	color:#000;
-	text-decoration: none;
-	padding: 30px 5px 0px 5px;
-	display: list-item;
-	list-style: none;
-}
-
-nav a:hover {
-	color: #FFF;
-}
-
-div.socialmedia img {
-	height: 40px;
-	display: list-item;
-	margin-right: auto;
-	margin-left: auto;
-	padding: 5px;
-}
-div.socialmedia img:hover {
-	filter: invert(90%);
-}
- .web_button:active + nav {
-   display: block;
-}
-	nav a {
-		color:#000;
-		text-decoration: none;
-		padding: 30px 5px 0px 5px;
-		}
-
-	nav a:hover {
-		color: #FFF;
-	}
-	div.socialmedia img {
-		height: 30px;
-		width: 30px;
-	}
-	div.socialmedia img:hover {
-	  filter: invert(90%);
-	 }
+  nav a:hover {
+   	color: #FFF;
+   }
 
    div.socialmedia img {
    	height: 40px;
@@ -446,7 +415,6 @@ div.socialmedia img:hover {
 	 body > footer h4 {
     font-size: 2.7em;
   }
-
   body > footer > div > div > img {
     width: 38px;
     height: 38px;
@@ -455,13 +423,13 @@ div.socialmedia img:hover {
    .background_meet_team{
  			width: 60%;
  			margin:5px;
- 	}
-	.map{
-    width:60% ;
-    height:60%;
-    left: 0px;
-		padding-left: 0;
-    }
+ 		}
+		.map{
+       width:60% ;
+       height:60%;
+       left: 0px;
+			 padding-left: 0;
+     }
 }
 
   /* HEADER CSS FOR TABLET*/
